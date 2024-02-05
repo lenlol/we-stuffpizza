@@ -397,7 +397,7 @@ footer {
     bottom: 0;
     right: 0;
     background-color: white;
-    z-index: 99999999;
+   z-index: 99999999999999999999999999999999999999;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -408,7 +408,7 @@ footer {
     left: 0;
     bottom: 0;
     right: 0;
-    z-index: 999999999;
+    z-index: 99999999999999999999999999999999999999;
 }
 
 .pl-gone {
