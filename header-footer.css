@@ -1,0 +1,439 @@
+/* * {cursor: url(https://cur.cursors-4u.net/food/foo-2/foo165.cur), auto !important;} */
+
+/* CSS RESET */
+*, *::before, *::after {
+    box-sizing: border-box;
+    }
+    * {
+    margin: 0;
+    padding: 0;
+    }
+    body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    }
+    
+    ::-webkit-scrollbar {
+        width: 0;
+        background: transparent; 
+        }
+        ::-webkit-scrollbar-thumb {
+        background: transparent;
+        }
+        
+    img:not(.ingredients-wrap img, .ingredients-wrap2 img), picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+    }
+    input, button, textarea, select {
+    font: inherit;
+    }
+    p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+    }
+    #root, #__next {
+    isolation: isolate;
+    }
+    /* CSS RESET END */
+    
+
+/* VARIABLES */
+:root {
+--ff-p: 'Shadows Into Light Two', cursive;
+--ff-h: Gagalin;
+--clr-red: #BB1600;
+--clr-blue: #37548D;
+--clr-green: #5F8D37;
+--clr-white-ish: #FFF1D7;
+--clr-orange: #F7AD45;
+}
+
+
+@import url('https://fonts.cdnfonts.com/css/gagalin');
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.mw {
+    max-width: 1640px;
+    margin:0 auto;
+    padding: 0 4rem;
+}
+
+@media (max-width:900px) {
+    
+.mw {
+    padding: 0 1.7rem;
+}
+
+}
+
+/* VARIABLES END */
+    
+#fontawesome-icons {
+    color: var(--clr-white-ish);
+    display: none;
+    cursor: pointer;
+}
+
+.rotate {
+    transform: rotate(90deg);
+}
+
+.mobile-nav-close {
+    display: none;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--clr-white-ish);
+}
+
+p {
+    font-family: var(--ff-p);
+}
+
+/* HEADER */
+
+header {
+    background-color: var(--clr-red);
+    padding: 1.3rem 0 0;
+}
+
+.header-brand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+    max-width: 1640px;
+    margin:0 auto;
+    padding: 0 4rem;
+}
+
+.h1 {
+    font-family: var(--ff-h);
+    color: var(--clr-white-ish);
+    font-size: clamp(2.3rem, 1.7706rem + 0.9412vw, 2.9rem);
+    letter-spacing: 2px;
+}
+
+.logo {
+    align-self: flex-end;
+    width: 235px;
+}
+
+.logo img {
+    width: 6rem;
+}
+
+.header-ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:  clamp(0.8rem, 0.6235rem + 0.3137vw, 1rem);
+    font-size: clamp(1.5rem, 1.4118rem + 0.1569vw, 1.6rem);
+}
+
+.icons {
+    width: clamp(1.5rem, 1.0588rem + 0.7843vw, 2rem);
+}
+
+/* HEADER END */
+
+/* footer  */
+
+footer {
+    color: var(--clr-white-ish);
+    background-color: #37548D;
+    padding-bottom: 6vw;
+}
+
+.footer-brand {
+    display: flex;
+    align-content: center;
+    justify-content:flex-start;
+    width: 20.833vw;
+    gap: 3vw;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 45vw;
+    text-align: right;
+    font-size: clamp(1.3rem, 0.5059rem + 1.4118vw, 2.2rem);
+}
+
+.h5 {
+    align-self: center;
+    font-family: var(--ff-h);
+    font-size: clamp(1.3rem, -0.0235rem + 2.3529vw, 2.8rem);
+}
+
+.footer-logo {
+    width: 7.813vw;
+    height: 100%;
+}
+
+.footer-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.copyright {
+    font-family: sans-serif;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3.5rem 0 0;
+    opacity: 45%;
+}
+
+
+
+
+
+
+
+/* footer end */
+
+@media (max-width:1170px) {
+    .logo {
+        width: 150px;
+    }
+}
+
+
+
+.pop-up-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+justify-content: center;
+align-items: center;
+background-color: rgba(0, 0, 0, 0.713);
+z-index: 9999999999999999999999999999;
+}
+
+#fontawesome-icons-pop-up {
+    cursor: pointer;
+    position: absolute;
+    top: 70px;
+    right: 40px;
+    font-size: clamp(3rem, 2.1176rem + 1.5686vw, 4rem);
+    color: var(--clr-white-ish);
+}
+
+.pop-up {
+    color: black;
+    position: relative;
+    width: clamp(31.25rem, 19.8864rem + 30.303vw, 56.25rem);
+    background-color: var(--clr-orange);
+}
+
+
+span:not(#date, .price-span) {
+    color: var(--clr-red);
+}
+
+.blue-clr {
+    color: var(--clr-blue) !important;
+}
+
+.red-clr {
+    color: var(--clr-red) !important;
+}
+
+.green-clr {
+    color: var(--clr-green) !important;
+}
+
+
+.pop-up-wrap-gone {
+    display: none;
+}
+
+.pop-up-wrap-done-gone {
+    display: none;
+}
+
+
+
+
+@media (max-width:900px) {
+
+    .header-ul {
+        display: none;
+    }
+
+    #fontawesome-icons {
+        display: initial;
+        font-size: clamp(2rem, 1.4286rem + 2.4381vw, 2.8rem);
+    }
+
+    .logo {
+        width: auto;
+        align-self: center;
+    }
+
+    .h1 {
+        font-size: clamp(1.2rem, 0.0571rem + 4.8762vw, 2.8rem);}
+    
+        
+.header-brand {
+    padding: 0 clamp(1.7rem, 1.1286rem + 2.4381vw, 2.5rem);
+    height: clamp(4rem, 2.5714rem + 6.0952vw, 6rem);
+}
+
+.logo img {
+    width: clamp(3rem, 0.8571rem + 9.1429vw, 6rem);
+}
+
+header {
+    padding: 0.7rem 0 0;
+}
+
+
+.mobile-nav {
+    display: initial;
+    position: absolute;
+    top: clamp(8rem, 5.1429rem + 12.1905vw, 12rem);
+    left: 0;
+    height: 100px;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 9999999;
+}
+
+.mobile-nav-close {
+    display: none;
+}
+
+.mobile-ul {
+    margin: 0 auto;
+    background-color: var(--clr-red);
+    display: initial;
+    display: flex;
+    width: 80vw;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile-li {
+    font-size: clamp(1.5rem, 1.1429rem + 1.5238vw, 2rem);
+}
+
+.icons {
+    width: clamp(1.5rem, 1.1429rem + 1.5238vw, 2rem);;
+}
+
+
+
+
+
+
+
+footer {
+    padding-bottom: 6vw;
+    padding-top: 2vw;
+}
+
+.footer-brand {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 23.833vw;
+    gap: 3vw;
+}
+
+.contact {
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 7vw;
+    width: 55vw;
+    text-align: right;
+    font-size: clamp(1.2rem, 0.7714rem + 1.8286vw, 1.8rem);
+}
+
+.h5 {
+    font-size: clamp(1.3rem, 0.6571rem + 2.7429vw, 2.2rem);
+    align-self: flex-start;
+}
+
+.footer-logo {
+    width: clamp(4rem, 2.2143rem + 7.619vw, 6.5rem);
+    height: 100%;
+}
+
+.copyright {
+    font-size: 15px;
+    margin: 1.6rem 0 0;
+}
+
+}
+
+
+.preloader {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    z-index: 99999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.preloader img{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 999999999;
+}
+
+.pl-gone {
+    display: none;
+}
+
+
+
+@media (max-width:600px) {
+    
+    #fontawesome-icons-pop-up {
+        top: 60px;
+        right: 25px;
+        font-size: clamp(3rem, 2.1176rem + 1.5686vw, 4rem);
+    }
+    
+    .pop-up {
+        width: 80vw;
+    }
+
+}
+
+
+
+::-webkit-selection,::selection, ::-moz-selection {
+    background-color: var(--clr-white-ish) !important;
+    color: var(--clr-red) !important;
+}

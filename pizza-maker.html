@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pizza-maker.css">
+    <link rel="stylesheet" href="header-footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/gagalin" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="images/logo.png">
+    <title>We-Stuff Pizza | Make Your Pizza</title>
+</head>
+<body>
+<header>
+    <section class="header-brand mw">
+        <a class="logo" href="index.html"><img class="wsp-logo" src="images/logo.png" alt="We-Stuff Pizza Logo which ia a pepperoni pizza slice"></a>
+        <p class="h1">We-Stuff Pizza</p>
+        <nav>
+            <ul class="header-ul">
+                <li class="header-li"><a class="lis es"  href="#ordering"><p>Order</p></a></li>
+                <li class="header-li"><a class="lis"  href="#footer"><p>Contact</p></a></li>
+                <li class="header-li"><a class="lis"  href="https://www.facebook.com/" target="_blank"><img class="icons" src="images/facebook.png" alt=""></a></li>
+                <li class="header-li"><a class="lis"  href="https://www.instagram.com/" target="_blank"><img class="icons" src="images/instagram.png" alt=""></a></li>
+            </ul>
+            <div class="rot"><i id="fontawesome-icons" class="fa-solid fa-bars"></i></div>
+        </nav>
+    </section>
+</header>
+
+<div class="div-wrap">
+    <img class="divider-1" src="images/wave(1).png" alt="wavey divider">
+</div>
+
+<main>
+
+
+    <section class="main-section mw">
+
+        <div class="pizza-wrap">
+            <div class="the-pizza-fixed">
+                <div class="the-pizza">
+                    <img src="images/ingredients/base.png" alt="pizza base">
+                    <img class="tag" src="images/price-tag.png" alt="price tag">
+                    <p class="price">$<span class="price-span">10</span></p>
+                    
+                </div>
+
+            
+            </div>
+
+            <hr id="fixed-div" class="fixed-div">
+        </div>
+
+        <div class="pick">
+            <div class="toppings-form">
+                <p class="toppings-h pick-h">toppings <span class="blue-clr">$1</span></p>
+                <form class="input-wrap toppings-wrap" action="/action_page.php">
+
+                    <div class="input-div">
+                        <label for="mushroom"> <img src="images/ingredients/mushroom.png" alt="mushroom as a topping"></label>
+                        <input class="pick-input ing-checkbox" type="checkbox" id="mushroom" name="mushroom" value="mushroom">
+                    </div>
+                    
+                    <div class="input-div">
+                        <label for="olive"> <img src="images/ingredients/olive-1.png" alt="olive as a topping"></label>
+                        <input class="pick-input ing-checkbox" type="checkbox" id="olive" name="olive" value="olive">
+                    </div>
+
+                    <div class="input-div">
+                        <label for="onion"> <img src="images/ingredients/onion.png" alt="onion as a topping"></label>
+                        <input class="pick-input ing-checkbox" type="checkbox" id="onion" name="onion" value="onion">
+                    </div>
+
+                    <div class="input-div">
+                        <label for="pepperoni"> <img src="images/ingredients/pepperoni.png" alt="pepperoni as a topping"></label>
+                        <input class="pick-input ing-checkbox" type="checkbox" id="pepperoni" name="pepperoni" value="pepperoni">
+                    </div>
+
+                    <div class="input-div">
+                        <label for="pineapple"> <img src="images/ingredients/pineapple.png" alt="pineapple as a topping"></label>
+                        <input class="pick-input ing-checkbox" type="checkbox" id="pineapple" name="pineapple" value="pineapple">
+                    </div>
+
+                    <div class="input-div">
+                        <label for="tomato"> <img src="images/ingredients/tomato.png" alt="tomato as a topping"></label>
+                        <input class="pick-input ing-checkbox" type="checkbox" id="tomato" name="tomato" value="tomato">
+                    </div>
+
+                    <div class="input-div">
+                        <label for="basil"> <img src="images/ingredients/basil.png" alt="basil as a topping"></label>
+                        <input class="pick-input ing-checkbox" type="checkbox" id="basil" name="basil" value="basil">
+                    </div>
+
+                    <div class="input-div">
+                        <label for="broccoli"> <img src="images/ingredients/broccoli.png" alt="broccoli as a topping"></label>
+                        <input class="pick-input ing-checkbox" type="checkbox" id="broccoli" name="broccoli" value="broccoli">
+                    </div>
+
+                    <div class="input-div">
+                        <label for="cheese"> <img src="images/ingredients/cheese.png" alt="cheese as a topping"></label>
+                        <input class="pick-input ing-checkbox" type="checkbox" id="cheese" name="cheese" value="cheese">
+                    </div>
+
+                    <div class="input-div">
+                        <label for="pepper"> <img src="images/ingredients/pepper.png" alt="pepper as a topping"></label>
+                        <input class="pick-input ing-checkbox" type="checkbox" id="pepper" name="pepper" value="pepper">
+                    </div>
+
+                    <div class="input-div">
+                        <label for="ham"> <img src="images/ingredients/ham.png" alt="ham as a topping"></label>
+                        <input class="pick-input ing-checkbox" type="checkbox" id="ham" name="ham" value="ham">
+                    </div>
+
+
+                </form> 
+            </div>
+            <div class="sauces-form">
+                <p class="sauces-h pick-h">additional sauces <span class="blue-clr">$2</span></p>
+                <form class="input-wrap sauces-wrap" action="/action_page.php">
+                    <div class="input-div input-div-ver">
+                        <label for="mustard"> <img src="images/ingredients/mustard-bottle.png" alt="mustard as a topping"></label>
+                        <input class="pick-input sauc-checkbox" type="checkbox" id="mustard" name="mustard" value="mustard">
+                    </div>
+
+                    <div class="input-div input-div-ver">
+                        <label for="ketchup"> <img src="images/ingredients/ketchup-bottle.png" alt="ketchup as a topping"></label>
+                        <input class="pick-input sauc-checkbox" type="checkbox" id="ketchup" name="ketchup" value="ketchup">
+                    </div>
+
+                    <div class="input-div input-div-ver">
+                        <label for="mayo"> <img src="images/ingredients/mayo-bottle.png" alt="mayo as a topping"></label>
+                        <input class="pick-input sauc-checkbox" type="checkbox" id="mayo" name="mayo" value="mayo">
+                    </div>
+                </form>
+            </div>
+            <div class="drinks-form">
+                <p class="drinks-h pick-h">drinks <span class="blue-clr">$4</span><p>      
+                <form class="input-wrap drink-wrap" action="/action_page.php">
+                    <div class="input-div-dr">
+                        <label for="pepsi"> <img src="images/ingredients/pepsi.png" alt="pepsi"></label>
+                        <div class="drink-inputs">
+
+                            <input class="pick-input dr-checkbox pepsi-checkbox" type="checkbox" id="pepsi" name="pepsi" value="pepsi">
+
+                            <div class="pepsi-add custom-nums custom-num">
+                                <i class="fa fa-angle-up arr-up"></i>
+                                <input
+                                type="number"
+                                class="num-input pepsi"
+                                min="0"
+                                max="10"
+                                value="1"
+                                data-color="#ffffff"
+                                data-name="pepsi"
+                                />
+                                <i class="fa fa-angle-down arr-down"></i>
+                                <div class="barrier pepsi-barrier"></div>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+
+                    <div class="input-div-dr">
+                        <img class="oos" src="images/out-of-stock.png" alt="out of stock">
+                        <label for="7up"> <img src="images/ingredients/7up.png" alt="7up"></label>
+                        <div class="drink-inputs">
+
+                            <input class="pick-input" type="checkbox" id="7up" name="7up" value="7up" disabled>
+
+                            <div class="custom-nums">
+                                <i class="fa fa-angle-up arr-up"></i>
+                                <input
+                                type="number"
+                                class="num-input"
+                                min="0"
+                                max="10"
+                                value="1"
+                                data-color="#ffffff"
+                                />
+                                <i class="fa fa-angle-down arr-down"></i>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="input-div-dr">
+                        <label for="cola"> <img src="images/ingredients/cola.png" alt="cola"></label>
+                        <div class="drink-inputs">
+
+                            <input class="pick-input dr-checkbox cola-checkbox" type="checkbox" id="cola" name="cola" value="cola">
+
+                            <div class="cola-add custom-nums custom-num">
+                                <i class="fa fa-angle-up arr-up"></i>
+                                <input
+                                type="number"
+                                class="num-input cola"
+                                min="0"
+                                max="10"
+                                value="1"
+                                data-color="#ffffff"
+                                data-name="cola"
+                                />
+                                <i class="fa fa-angle-down arr-down"></i>
+                                <div class="barrier cola-barrier"></div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="input-div-dr">
+                        <label for="fanta"> <img src="images/ingredients/fanta.png" alt="fanta"></label>
+                        <div class="drink-inputs">
+
+                            <input class="pick-input dr-checkbox fanta-checkbox" type="checkbox" id="fanta" name="fanta" value="fanta">
+
+                            <div class="fanta-add custom-nums custom-num">
+                                <i class="fa fa-angle-up arr-up"></i>
+                                <input
+                                type="number"
+                                class="num-input fanta"
+                                min="0"
+                                max="10"
+                                value="1"
+                                data-color="#ffffff"
+                                data-name="fanta"
+                                />
+                                <i class="fa fa-angle-down arr-down"></i>
+                                <div class="barrier fanta-barrier">
+                                </div>
+
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="input-div-dr">
+                        <label for="schweppes"> <img src="images/ingredients/schweppes.png" alt="schweppes"></label>
+                        <div class="drink-inputs">
+
+                            <input class="pick-input dr-checkbox schweppes-checkbox" type="checkbox" id="schweppes" name="schweppes" value="schweppes">
+
+                            <div class="custom-nums schweppes-add custom-num">
+                                <i class="fa fa-angle-up arr-up"></i>
+                                <input
+                                type="number"
+                                class="num-input schweppes"
+                                min="0"
+                                max="10"
+                                value="1"
+                                data-color="#ffffff"
+                                data-name="schweppes"
+                                />
+                                <i class="fa fa-angle-down arr-down"></i>
+                                <div class="barrier schweppes-barrier"></div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="checkout-form">
+                <p class="chechout-h pick-h">checkout<p>
+
+                <form class="input-wrap checkout-wrap" action="/action_page.php">
+
+                    <div class="input-div input-div-checkout input-div-checkout-1line">
+                            <label for="stuffed-crust"> <p class="crust-h">Stuffed Crust</p> </label>
+                            <input class="pick-input stuffed-crust-check" type="checkbox" id="stuffed-crust" name="stuffed-crust" value="stuffed-crust">
+                    </div>
+                    <div class="input-div input-div-checkout">
+                            <label for="cash"> <img src="images/cash.png" alt="cash"> </label>
+                            <input class="pick-input pick-input-radio pick-input-cash" type="radio" id="cash" name="cash" value="cash" required>
+                    </div>
+                    <div class="input-div input-div-checkout">
+                        <img class="soos" src="images/out-of-service.jpg" alt="out of service sign">
+                            <label for="credit"> <img src="images/credit-card.png" alt="credit"> </label>
+                            <input class="pick-input pick-input-radio" type="radio" id="credit" name="credit" value="credit" disabled>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="ordering" class="mw">
+
+        <p class="address-h">Enter your address</p>
+        <form class="input-wrap address-form" action="/action_page.php">
+            <select class="select select-city" id="city" name="city" enterkeyhint="done" aria-placeholder="City" required>
+                <option value="" disabled selected>Pick A City</option>
+                <option value="Tbilisi">Tbilisi</option>
+                <option value="Batumi">Batumi</option>
+                <option value="Gori">Gori</option>
+                <option value="Telavi">Telavi</option>
+                <option value="Qutaisi">Qutaisi</option>
+                <option value="Rustavi">Rustavi</option>
+            </select>
+            <input class="address-input address-input-js" style="font-family: 'Shadows Into Light Two', cursive;" type="text" id="street-address" name="street-address" required enterkeyhint="next" placeholder="Your Street House Number" required></input>
+        </form>
+
+        <div class="submit-wrap"><input class="order-now order-now-js" type="submit" value="finish order"></div>
+
+    </section>
+
+</main>
+
+<div class="div-wrap">
+    <img class="divider" src="images/Untitled.png" alt="wavey divider">  
+</div>
+
+<footer id="footer">
+    <div class="footer-wrap mw">
+        <div class="footer-brand">
+            <img class="footer-logo" src="images/logo.png" alt="We-Stuff Pizza logo">
+            <p class="h5">We-Stuff <br> pizza</p>
+        </div>
+        <div class="contact">
+            <div class="contact-1">
+                <p>westuff@pizza.mail</p>
+                <p>Open Everyday 24/7</p>
+            </div>
+            <div class="contact-2">
+                <p>+126 43 13 85</p>
+                <p>+55 12 98 469</p>
+            </div>
+        </div>
+    </div>
+    <p class="copyright">Copyright © 2023 All Rights Reserved</p>
+</footer>
+
+<nav class="mobile-nav mobile-nav-close">
+    <ul class="header-ul mobile-ul">
+        <li class="header-li mobile-li"><a class="lis"  href="#ordering"><p>Order</p></a></li>
+        <li class="header-li mobile-li"><a class="lis"  href="#footer"><p>Contact</p></a></li>
+        <li class="header-li mobile-li"><a class="lis"  href="https://www.facebook.com/" target="_blank"><img class="icons" src="images/facebook.png" alt="facebook icon"></a></li>
+        <li class="header-li mobile-li"><a class="lis"  href="https://www.instagram.com/" target="_blank"><img class="icons" src="images/instagram.png" alt="instagram icon"></a></li>
+    </ul>
+</nav>
+
+<div class="preloader"><img src="images/loading.gif"></div>
+
+<article class="pop-up-wrap pop-up-wrap-gone">
+    <div class="pop-up">
+        <i class="fa-solid fa-x fa-2xl" id="fontawesome-icons-pop-up" style="color: #000000;"></i>
+        <p class="pop-up-heading"><span>We-Stuff pizza </span> now working <span>24/7</span></p>
+        <p class="pop-up-text">we know you’ve been waiting 😉</p>
+    </div>
+</article>
+
+<article class="pop-up-wrap pop-up-wrap-done pop-up-wrap-done-gone">
+    <div class="pop-up">
+        <i class="fa-solid fa-x fa-2xl fontawesome-icons-pop-up-done" id="fontawesome-icons-pop-up"></i>
+        <picture class="img">
+            <source srcset="images/done-desktop.png" media="(min-width: 600px)">
+            <img src="images/done-mobile.png" alt="we-stuff pizza now working 24/7">
+        </picture>
+    </div>
+</article>
+
+<script src="buttons-closing.js"></script>
+<script src="numInput.js" type="module"></script>
+<script src="forms.js" type="module"></script>
+
+</body>
+</html>
